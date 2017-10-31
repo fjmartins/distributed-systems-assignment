@@ -10,7 +10,7 @@ public class CalculatorServer {
 		try {
 			Calculator server = new Calculator();
 			LocateRegistry.createRegistry(1099);
-			Naming.rebind("rmi://localhost/ServidorCalculadora", server);
+			Naming.rebind("rmi://localhost/CalculatorServer", server);
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
